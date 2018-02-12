@@ -22,9 +22,6 @@
     		</visual>
 	</link>
 
-<!-- Pi parameter -->
-	<xacro:property name="pi" value="3.1415926535897931" />
-
 <!-- Joint properties -->
 	<xacro:property name="joint_lower_limit" value="-${1.5}" />
 	<xacro:property name="joint_upper_limit" value="${1.5}" />

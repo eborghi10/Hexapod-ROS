@@ -3,7 +3,7 @@
   <arg name="model" />
   <arg name="gui" default="True" />
 
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find crab_description)/models/crab_model.xacro'" />
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find crab_description)/models/crab_model.xacro'" />
   <param name="use_gui" value="$(arg gui)" />
   <param name="rate" value="25" />
   <rosparam param="source_list"> [crab_joint_publisher] </rosparam>
