@@ -1,12 +1,15 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(crab_leg_kinematics)
 
+# orocos_kdl is not a catkin package but a plain cmake package
+# https://github.com/orocos/orocos_kinematics_dynamics/issues/38#issuecomment-65650671
+find_package(orocos_kdl)
+
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   kdl_parser
-  orocos_kdl
   roscpp
   rospy
   std_msgs
